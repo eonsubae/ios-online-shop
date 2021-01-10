@@ -30,6 +30,32 @@ class Category {
     }
 }
 
+// MARK: Download category from firebase
+
+func downloadCategoriesFromFirebase(completion: @escaping (_ categoryArray: [Category])
+    -> Void) {
+    
+    var categoryArray: [Category] = []
+    
+    FirebaseReference(.Category).getDocuments { (snapshot, error) in
+        
+        guard let snapshot = snapshot else {
+            completion(categoryArray)
+            return
+        }
+        
+        if !snapshot.isEmpty {
+            
+            for categoryDict in snapshot.documents {
+//                print("created new category with")
+                categoryArray.append(Category(_dictionary: categoryDict.data() as NSDictionary))
+            }
+        }
+        
+        completion(categoryArray)
+    }
+}
+
 // MARK: Save category function
 
 func saveCategoryToFirebase(_ category: Category) {
@@ -50,6 +76,7 @@ func categoryDictionaryFrom(_ category: Category) -> NSDictionary {
 }
 
 // use only one time
+
 func createCategorySet() {
     let womenClothing = Category(_name: "Women's Clothing & Accessories", _imageName: "womenCloth")
         let footWaer = Category(_name: "Footwaer", _imageName: "footWaer")
