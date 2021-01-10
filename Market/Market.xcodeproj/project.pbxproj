@@ -11,6 +11,7 @@
 		428927EF25AAE4AC00D7A733 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428927EE25AAE4AC00D7A733 /* CategoryCollectionViewController.swift */; };
 		428927F225AAE58800D7A733 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428927F125AAE58800D7A733 /* CategoryCollectionViewCell.swift */; };
 		428927F525AAE6F500D7A733 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428927F425AAE6F500D7A733 /* GoogleService-Info.plist */; };
+		428927F825AAE9A100D7A733 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428927F725AAE9A100D7A733 /* FirebaseCollectionReference.swift */; };
 		42B2F2AC25A9F9E30092B58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2F2AB25A9F9E30092B58C /* AppDelegate.swift */; };
 		42B2F2AE25A9F9E30092B58C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2F2AD25A9F9E30092B58C /* SceneDelegate.swift */; };
 		42B2F2B325A9F9E30092B58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B2F2B125A9F9E30092B58C /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		428927EE25AAE4AC00D7A733 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		428927F125AAE58800D7A733 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		428927F425AAE6F500D7A733 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		428927F725AAE9A100D7A733 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		42B2F2A825A9F9E30092B58C /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B2F2AB25A9F9E30092B58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B2F2AD25A9F9E30092B58C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				42B2F2AB25A9F9E30092B58C /* AppDelegate.swift */,
+				428927F725AAE9A100D7A733 /* FirebaseCollectionReference.swift */,
 				42B2F2AD25A9F9E30092B58C /* SceneDelegate.swift */,
 				42B2F2B125A9F9E30092B58C /* Main.storyboard */,
 				428927F125AAE58800D7A733 /* CategoryCollectionViewCell.swift */,
@@ -218,6 +221,7 @@
 			files = (
 				428927F225AAE58800D7A733 /* CategoryCollectionViewCell.swift in Sources */,
 				42B2F2AC25A9F9E30092B58C /* AppDelegate.swift in Sources */,
+				428927F825AAE9A100D7A733 /* FirebaseCollectionReference.swift in Sources */,
 				42B2F2AE25A9F9E30092B58C /* SceneDelegate.swift in Sources */,
 				428927EF25AAE4AC00D7A733 /* CategoryCollectionViewController.swift in Sources */,
 			);
